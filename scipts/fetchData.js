@@ -102,6 +102,8 @@ export const fetchData = (infoEncode) => {
       .then((data) => {
         if (data.errors) {
           reject(new Error("GraphQL errors: " + JSON.stringify(data.errors)));
+          localStorage.removeItem("jwt");
+          window.location.reload(); // Recharger la page après la déconnexion
           return; // Handle errors appropriately
         }
         // Traitez les données récupérées
@@ -143,6 +145,7 @@ export const fetchData = (infoEncode) => {
         console.log(data.data.up.aggregate.sum.amount);
         console.log(data.data.down.aggregate.sum.amount);
         const maxAmount = GetMaxAmounts(data.data.skill);
+        console.log(maxAmount);
         DrawRadarChart(maxAmount, radius, radius, radius);
         const chart = document.querySelector(".chart");
         chart.appendChild(svg2);

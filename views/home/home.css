@@ -296,6 +296,9 @@ body {
     width: 100%;
     margin: 10px;
   }
+  .container .header .disconnect{
+    width: 15%;
+  }
   body{
     overflow: scroll;
   }
