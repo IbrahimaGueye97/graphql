@@ -1,0 +1,302 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  background: #16052B;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .header {
+  margin-top: 5px;
+  height: 8%;
+  background: #00000033;
+  border: solid 1px rgba(255, 255, 255, 0.233);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  padding: 15px;
+}
+
+.container .header .disconnect {
+  width: 5%;
+}
+
+.container .header .disconnect img {
+  width: 55%;
+}
+
+.container .header .info-user {
+  font-size: 20px;
+  font-weight: 600;
+  color: azure;
+  padding: 10px;
+}
+
+.container .content-top {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container .elem {
+  color: aliceblue;
+}
+
+.container .content-top .elem {
+  width: 45%;
+  height: 90%;
+  background: #00000033;
+  border-radius: 15px;
+  border: solid 1px rgba(255, 255, 255, 0.233);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .content-top .elem2 {
+  overflow-y: scroll;
+}
+
+.tableProject {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tableProject th {
+  position: sticky;
+  top: 0;
+  background-color: #000; /* Ajoutez la couleur de fond désirée */
+  z-index: 1; /* Assure que les th restent au-dessus du contenu de la table */
+  width: 100%;
+}
+
+.tableProject thead {
+  position: sticky;
+  top: 0;
+  z-index: 2; /* Assure que le thead reste au-dessus du contenu de la table */
+}
+
+/* .tableProject th:first-child::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -1;
+} */
+
+.tableProject td {
+  margin-top: 50px;
+}
+
+.tableProject th, 
+.tableProject td {
+  padding: 5px;
+  text-align: left;
+}
+
+.tableProject thead tr {
+  display: block;
+}
+
+.tableProject tbody {
+  overflow-y: scroll;
+}
+
+.tableProject tbody tr:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.116);
+}
+
+.container .content-top .elem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 500;
+  color: antiquewhite;
+}
+
+.container .content-top .elem1 h1 {
+  font-size: 40px;
+  color: antiquewhite;
+  box-shadow: 1px 2px rgb(4, 4, 63);
+}
+
+.container .content-middel {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container .content-middel .elem {
+  width: 30%;
+  height: 90%;
+  background: #00000033;
+  border-radius: 15px;
+  border: solid 1px rgba(255, 255, 255, 0.233);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: start;
+  color: aliceblue;
+}
+
+.container .content-middel .elem3 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.container .content-middel .elem3 h3 {
+  font-weight: 600;
+}
+
+.container .content-middel .elem .xp {
+  font-size: 50px;
+  color: #5e5568;
+}
+
+.container .content-middel .elem4 {
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+  gap: 10px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .content-middel .elem4 .ratio {
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+  gap: 10px;
+}
+
+.container .content-middel .elem5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .content-middel .elem5 .level {
+  font-size: 55px;
+  font-weight: 600;
+  background: #ffffff7a;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content-middel .elem5 .level {
+  color: #16052B;
+}
+
+.container .content-bottom {
+  height: 38%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container .content-bottom .elem {
+  width: 48%;
+  height: 100%;
+  margin-top: 25px;
+  background: #00000033;
+  border-radius: 15px;
+  border: solid 1px rgba(255, 255, 255, 0.233);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .content-bottom .elem6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 33px;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.container .content-bottom .elem6 #hoverInfoCircul {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.container .content-bottom .elem7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 33px;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.container .content-bottom .elem7 #hoverInfo {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 700px) {
+  .container,
+  .container .content-middel, 
+  .container .content-top, 
+  .container .content-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .container{
+    height: auto;
+    /* gap: 10px; */
+  }
+  /* .container .content-middel {
+    background: #000;
+    width: 100%;
+  } */
+  .container .content-top .elem{
+    width: 100%;
+    margin: 10px;
+  }
+  .container .content-top .elem2{
+    height: 200px;
+  }
+  .container .content-middel .elem{
+    width: 100%;
+    margin: 10px;
+  }
+  .container .content-bottom .elem{
+    width: 100%;
+    margin: 10px;
+  }
+  body{
+    overflow: scroll;
+  }
+}
